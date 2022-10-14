@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radd Industries</title>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="radd.js"></script>
+</head>
+<body style="background-color: lightblue;">
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display: none;" id="mySidebar">
+    <br>
+    <button class="w3-bar-item w3-button w3-dark-blue w3-bold w3-hide-large" onclick="w3_close()" style="height: 50px; font-size: 20px;"><i>Radd Industries  <span class="fa fa-close"></span></i></button>
+    <br>
+    <a href="#home" class="w3-bar-item w3-hover-shadow w3-button">Home</a>
+    <br>
+    <a href="#aboutus" class="w3-bar-item w3-hover-shadow w3-button">About Us And Our Team</a>
+    <br>
+    <a href="#services" class="w3-bar-item w3-hover-shadow w3-button">Our Services And Supplies</a>
+    <br>
+    <a href="#contact" class="w3-bar-item w3-hover-shadow w3-button">Contact</a>
+    <br>
+    <a href="#login" class="w3-bar-item w3-hover-shadow w3-button">Login</a>
+  </div>
+    <center id="main">
+        <div id="home">
+      <div class="w3-panel w3-margin-bottom"><h1 class="w3-bold w3-wide"><b style="font-size: 100px; color: navy;"><img src="Logo.png" style="width: 10%;">                                            RADD INDUSTRIES                                                  <img src="ISO.png" style="width: 10%;"></b></h1></div>
+      <div class="w3-left"><button class="w3-button w3-margin-top w3-margin-left w3-hide-large" id="v" onclick="w3_open()"><i class="fa fa-bars"></i></button></div>
+        <br><br>
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="machine.jpg" style="height: 80%; display: block;">
+          <img class="mySlides" src="pallet.png" style="height: 80%; display: none;">
+         <img class="mySlides" src="trolley1.png" style="height: 80%; display: none;">
+         <img class="mySlides" src="trolley2.png" style="height: 80%; display: none;">
+         <img class="mySlides" src="trolley3.png" style="height: 80%; display: none;">
+         <img class="mySlides" src="trolley4.png" style="height: 80%; display: none;">      
+         <button class="w3-button w3-grey w3-display-left" onclick="plusDivs(-1)" style="margin-left: 3%; border-radius: 50px;">&#10094;</button>
+         <button class="w3-button w3-grey w3-display-right" onclick="plusDivs(1)" style="margin-right: 3%; border-radius: 50px;">&#10095;</button>
+       </div>
+        <br><br>
+        <hr style="width: 90%; border-width: 5px;">
+        </div>
+<br><br>
+        <div id="aboutus">
+        <h2><u><em>About Us And Our Team</em></u></h2>
+        <br><br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>About Us :</u></i></h4>
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%; margin-right: 20%;"><em>RAAD Industries is established by a group of professionals who have very rich experience in sheet metal industries. RAAD industries is located in Thandalam village near SIPCOT industrial estate which provides shearing solutions to sheet metals with maximum 8 mm thick. With prime focus on customer satisfaction, RAAD industries committed to ensure effective utilization of material.</em></p>
+         </div>
+         <br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Our Team :</u></i></h4> 
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%; margin-right: 20%;"><em>We have a team of highly qualified mechanical engineers who have helped us to carve a niche for ourselves in the field. We have a view to fill up the void created by a crisis of contractor with professionals who would support the clients in a better way. Our team members have an in-depth knowledge of the matter and put their heart and soul into the projects to deliver the best service.</em></p>
+         </div>
+         <br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Our Infrastructure :</u></i></h4> 
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%; margin-right: 20%;"><em>Backed up by a sound infrastructural base, we have set benchmarks in the field of fabrication of trolleys,racks etc., and also in the filed of shearing mild steel, stainless steel, etc.,</em></p>
+         </div>
+         <br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Our Strenghts :</u></i></h4> 
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%;"><em>We are able to set new benchmarks for our competitors owing to the following reasons :</em></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Customized Solutions</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Timely Delivers</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Excellent Infrastructure</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Accuracy In Installation</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Well Trained Operators</i></p>
+        </div>
+         <br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Quality Standrad :</u></i></h4> 
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%; margin-right: 20%;"><em>We give top priority towards producing qualitative range of products to the clients. for attaining this objective, we have ICR,CA,CCF systems.</em></p>
+        </div>
+         <br>
+         <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Company Profile :</u></i></h4> 
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Business Type - Job Order</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Competitive Advantage - Superior Product Quality / Timely Delivery</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; No. of Staff - 10</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Year of Establishment - 2013</i></p>
+         <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Capacity - As Per Requirements</i></p>
+        </div>
+        <br>
+        <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Customers :</u></i></h4> 
+        <div class="w3-left-align">
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Ford India Private Limited, Chengalpattu.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Hwashin Automotive India (P) Limited, Sipcot, Kancheepuram.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Hirotec India (P) Limited, Coimbatore.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Komos, Orgadam.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; SH Electronics, Kancheepuram.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Mac Enterprises, Sriperambudur.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Ubitech, Mannur.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; 5 Star Body Building Works, Ambattur.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Sri Ram Fabrications, Ambattur</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Sai Sheets, Sipcot, Kancheepuram</i></p>
+        </div>
+        <br>
+        <hr style="width: 90%; border-width: 5px;">
+       </div>
+<br><br>
+
+<div id="services">
+  <h2><u><em>Our Services And Supplies</em></u></h2>
+  <br><br>
+         <h4 class="w3-bold w3-left-align" style="color: blue; margin-left: 20%;"><i><u>Products :</u></i></h4>
+         <div class="w3-left-align">
+         <p class="w3-bold" style="margin-left: 20%;"><i style="font-size: 16px;"><b>Industrial Trolley :</b></i></p>
+         <p class="w3-bold" style="margin-left: 20%; margin-right: 20%;"><em>We bring to you a wide range of industrial trolleys with extreme durability and carrying capacity. Our whole range of tools, industrial trolleys are used in various industries for multiple process. These trolleys are available in various shapes and sizes so that they are capable of being used for different purposes. We make the products in such a manner that they suits the specific needs of the clients .</em></p>
+         </div>
+         <br>
+       <h4 class="w3-bold w3-left-align" style="color: blue; margin-left: 20%; font-size: 25px;"><i><u><b>Shearing Machine :</b></u></i></h4>
+       <br>
+       <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Features :</u></i></h4>
+       <div class="w3-left-align">
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Hydraulic Shearing Machine Has Rugged Structure As Per International Standards.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Hardened Rollers Guide Beam For Constant Blade Gap Used In Hydraulic Shearing Machine</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Rake Angle Adjustable To Suit Thickness And Material</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Blade Gap In Hydraulic Shearing Machine Are Adjusted With Levers For Clean Cuts</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Sheets Clamped Hydraulically Before Cut Starts</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Shearing Clamping Forces Adjustable To Suit Job</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Blade Is A Premium HCHCr, With Four Usable Edges</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Beam Returns In Releasing Foot Switch For Smaller Cuts</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Cutting Area, Cutting Length And Positing Adjustable For Shorter Jobs</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Front Gauging With Stops, Scale On Squaring Arm Sheet Supports 600mm Long Help Support Long Plates.</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Back-Guage in Hydraulic Shearing Machine Moves Away To Avoid Trapping Of Cut Sheets</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Foot Switch Hydraulic Shearing Machine Movable For Operation From Safe Position</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Finger Safety Guard With Clear View Of Lighted Cutting Area</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Efficient Compact Power Pack With Minimal Piping</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Rake Angle Is Adjustable To Suit Thickness And Material</i></p>
+        <p class="w3-bold" style="margin-left: 20%;"><i>&bullet; Electricals Are Neatly Wired-Labelled For Trouble Shooting</i></p>
+        <br>
+        </div>
+        <br>
+        <h4 class="w3-bold w3-left-align" style="color: red; margin-left: 20%;"><i><u>Machine Specifications :</u></i></h4>
+        <br>
+        <img src="specs.png" style="width: 60%;">
+        <br><br><br>
+        <hr style="width: 90%; border-width: 5px;">
+</div>
+<br><br>
+
+<div id="contact">
+  <h2><u><em>Conatct</em></u></h2>
+  <br>
+  <h4 class="w3-bold">Plot no. 111, Siefa Nagar, Katarambakkam Village,<br>
+    Sriperumbudur Taluk, Kancheepuram District,<br>
+    Tamilnadu - 602 105.INDIA.</h4><br>
+  <h4 class="w3-bold w3-red"><i>Mobile : +91 9940112214/15/17</i></h4>
+  <h4 class="w3-bold w3-red"><i>email : raddindustries@gmail.com</i></h4>
+  <br><br>
+  <hr style="width: 90%; border-width: 5px;">
+</div>
+<br><br>
+
+<div id="login">
+  <h2><u><em>Login</em></u></h2>
+  <br>
+  <h4>(Employees Only)</h4>
+  <h6>Username is 'username', Passowrd is '1234', Provided Only For Checking</h6>
+  <br>
+  <div class="w3-card-4 w3-left-align" style="border-radius: 10px; margin-left: 30%; margin-right: 30%;">
+    <div class="w3-container w3-blue" style="border-radius: 10px;">
+      <h2>Employee Login</h2>
+    </div>
+    <div class="w3-container">
+      <p>      
+      <label class="w3-text-black"><b>User Name</b></label>
+      <input class="w3-input w3-border w3-white w3-round-large w3-hover-grey" id="username" type="text"></p>
+      <p>      
+      <label class="w3-text-black"><b>Password</b></label>
+      <input class="w3-input w3-border w3-white w3-round-large w3-hover-grey" id="password" type="text"></p>
+      <p>
+      <button class="w3-btn w3-blue" style="border-radius: 10px; margin-left: 45%;" onclick="check()">Register</button></p>
+    </div>
+  </div>
+  <script>
+    localStorage.setItem("USNM", "username") ;
+    localStorage.setItem("PSWD", "1234") ;
+    
+    function check() 
+    {
+      x = document.getElementById("username").value ;
+      y = document.getElementById("password").value ;
+      d = localStorage.getItem("USNM") ;
+      p = localStorage.getItem("PSWD") ;
+      
+      if (x == d && y == p) 
+      {
+        window.location = "emp.html" ;
+      }
+      else 
+      {
+        alert("Username Or Password Is Wrong") ;
+      }
+    }</script>
+  <br><br>
+  <hr style="width: 90%; border-width: 5px;">
+</div>
+</center>
+
+</body>
+</html>
