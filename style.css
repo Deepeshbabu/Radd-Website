@@ -3,10 +3,26 @@ h1
     font-family: 'Gemunu Libre', sans-serif;
 }
 
+#head
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border: 1px solid darkgrey;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 2;
+    background-color: darkslategrey;
+}
+
+#g 
+{
+    background-color: #98bee4;
+    border-radius: 10px;
+}
+
 #v 
 {
-    position: sticky;
-    left: 0px;
-    top: 0px;
-    font-size: 25px;
+    background-color: #98bee4;
 }

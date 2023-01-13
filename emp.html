@@ -10,6 +10,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -20,7 +25,7 @@
         <div class="w3-bar-item w3-button w3-border" onclick="myAccFunc('Demo1')">
             Production <i class="fa fa-caret-down"></i></div>
             <div id="Demo1" class="w3-hide w3-white w3-card-4">
-              <button onclick="getdata()" class="w3-bar-item w3-button">View</button>
+              <button onclick="view()" class="w3-bar-item w3-button">View</button>
               <button onclick="ope()" class="w3-bar-item w3-button">Entry</button>
         </div>
 <br>
@@ -42,7 +47,6 @@
             Settings <i class="fa fa-caret-down"></i></div>
             <div id="Demo4" class="w3-hide w3-white w3-card-4">
                 <button href="#" class="w3-bar-item w3-button">Username</button>
-                <button href="#" class="w3-bar-item w3-button">Password</button>
         </div>
     </div>
 
@@ -55,7 +59,7 @@
     <center style="margin-left: 20%;">
     <div class="w3-panel w3-section w3-bold w3-center"><h1 style="color: navy; font-size: 56px;"><u>Production Management System</u></h1></div>
     <br><br>
-    <div id="pe" style="margin-left: 5%;margin-right: 5%;">
+    <div id="pe" style="margin-left: 5%;margin-right: 5%; display: none;">
         <div class="w3-card-4 w3-round-large" style="width: 60%;">
             <div class="w3-container w3-blue w3-round-large">
               <h2>Production Entry Form</h2>
@@ -64,7 +68,7 @@
             <div class="w3-container">
               <p>
               <label class="w3-left">Date :</label>
-              <input class="w3-input w3-border w3-round-large w3-hover-light-grey" id="dtp" placeholder="dd-mm-yyyy" type="text"></p>
+              <input class="w3-input w3-border w3-round-large w3-hover-light-grey" id="dtp" placeholder="dd-mm-yyyy-sno." type="text"></p>
               <p>
               <label class="w3-left">Model :</label>
               <input class="w3-input w3-border w3-round-large w3-hover-light-grey" id="mdp" type="text"></p>
@@ -80,20 +84,14 @@
               <p></p>
             </div>
             </div>
+            </div>
 <br><br>
-    <div id="pv">
-        <h2 class="w3-bold" style="color: navy;"><u><b>Production</b></u></h2>
+<div id="pv" style="display: none;">
+<h2 class="w3-bold" style="color: navy;"><u><b>Production</b></u></h2>
       <br>
-        <table id="prod" class="w3-table-all w3-hoverable w3-centered" style="margin-left: 5%; width: 75%;">
-            <tr>
-                <th>Date</th>
-                <th>Model</th>
-                <th>No. Of Bundles</th>
-                <th>Bundle Weight</th>
-            </tr>
-        </table>
-    </div>
+        <table id="display" class="w3-table-all w3-hoverable w3-centered" style="margin-left: 5%; width: 75%;"></table>
     <br>
+  </div>
     </center>
     <script src="d.js"></script>
     </body>
